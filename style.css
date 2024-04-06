@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#menue{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 6px 8px;
+    box-shadow: black 0 0 5px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#menue > div >a{
+    font-size: 23px;
+    letter-spacing: 5px;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#menue > div >a:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+#menue > div > a > span{
+    font-weight: 900;
+}
+
+#img{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-height: 950px;
+}
+
+.img{
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0 10px; 
+}
+
+#img > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+    transform: translate(-50% , -50%);
+}
+
+#img>p> .br{
+    padding:5px 5px 5px 7px;
+    font-weight: 900;
+    opacity: 0.8;
+    background-color: black;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.projects{
+    padding: 0 25px;
+    margin-top: 40px;
+
+}
+
+.projects>hr{
+    color: rgb(243, 243, 243);
+    margin: 20px 0 15px 0;
+}
+
+.projects>p:first-child{
+    font-size: x-large;
+    margin: 0;
+}
+
+.sample{
+    position: relative;
+    width: 24%;
+    margin: 10px 0;
+}
+
+.samples >.sample > p{
+    font-size: 18px ;
+}
+
+.samples{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sample >p{
+    position: absolute;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: larger;
+}
+
+.sample>img{
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.myproject{
+    font-size: large;
+    line-height: 24px;
+}
+
+.persons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.person>a{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(217, 219, 221);
+}
+
+.person>a:hover{
+    width: 100%;
+    background-color: rgb(180, 183, 185);
+}
+
+.person{
+    width: 24%;
+}
+
+.person>img{
+    min-width: 100%;
+    max-width: 100%;
+    height: 51%;
+}
+
+.person> .name{
+    font-size: 30px;
+}
+
+.person> .position{
+    font-size: 20px;
+    color: rgb(131, 128, 128);
+}
+
+.person> .describe{
+    font-size: 20px;
+   
+}
+
+.person> .describe::selection, .name:;section{
+
+     background-color: rgb(43, 43, 219);   
+}
+
+.person> .position::selection{
+
+     font-size: 20px;
+     background-color: rgb(143, 136, 136);
+}
+
+.margin-bottom{
+     margin-bottom: 0 !important;
+}
+
+input[type="text"]{
+
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 15px 0;
+    font-size: larger;
+}
+
+input[type="submit"]{
+
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+input[type="submit"]:hover{
+
+    color: black;
+    background-color: rgb(175, 170, 170);
+}
+
+#map{
+    padding: 0 25px;
+    margin:40px 0 0 0;
+}
+
+#map>img{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.footer{
+    width: 100%;
+    padding: 30px;
+    background-color: black;
+}
+
+.footer>P{
+    text-align: center;
+    color: white;
+}
+
+.footer>p>a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer>p>a:hover{
+    color: green;
+}
+
+@media only screen and (max-width:1000px){
+
+    .samples,.persons { flex-direction: row;
+    flex-wrap: wrap;}
+    
+    .sample,.person{ width: 48%; }
+
+    .person{ margin-bottom: 10px;}
+}
+
+
+@media only screen and (max-width:600px){
+
+    #img >p > span:last-child, #menue> div:last-child
+        { display: none;}
+
+    .samples,.persons { flex-direction: column;}
+     
+    .sample, .person{ width: 100%; }
+
+    .person{ margin-bottom: 10px;}
+}
+
+
+
